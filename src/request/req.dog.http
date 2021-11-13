@@ -1,0 +1,58 @@
+@api = http://localhost:4000
+
+
+### get DOGS
+GET {{api}}/dogGrommer
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
+
+### get BY ID DOGS
+GET {{api}}/dogGrommer/618b277d8d480a1d2f909794
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
+
+
+### Create DOGS
+POST {{api}}/dogGrommer
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
+
+
+{
+    "name": "Huella Animal",
+    "address": {
+        "street": "Pasaje Tocopilla",
+        "number": 21,
+        "postalCode": "1780000",
+        "city": "Coquimbo",
+        "country": "Chile"
+    },
+    "phone": "+56 51 529168",
+    "avatar": "https://www.veterinarioslaserena.cl/wp-content/uploads/2018/06/2.jpg",
+    "service": ["618ef9be1839d5e3222eec8c","618ef9fe1839d5e3222eec92", "618efa1e1839d5e3222eec98"]
+}
+
+### "email": "petcare@gmail.com",
+### UPDATE
+PUT  {{api}}/dogGrommer/618f0190ea70c64d419eb6b9
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
+
+{
+    "address": {
+        "street": "Manuel Bulnes",
+        "number": 2996,
+        "postalCode": "1700000",
+        "city": "La Serena",
+        "country": "Chile"
+    }
+}
+
+
+### DELETE
+DELETE  {{api}}/dogGrommer/618b277d8d480a1d2f909794
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
+
+
+618c3984be9ab576f387e5b8

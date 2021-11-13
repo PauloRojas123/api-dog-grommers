@@ -1,0 +1,35 @@
+@api = http://localhost:4000
+
+
+### DELETE USER
+
+DELETE {{api}}/users/618342b1da6b54e3c09f0fc8
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRhNzYxMTg2NDQ4NGMyNzIzOGEyYiIsImlhdCI6MTYzNjE0ODYwNCwiZXhwIjoxNjM2MjM1MDA0fQ.UmRyuvfgawFs_bkByLu2oWbBdim9mUMCOuYyBm087F8
+
+### UPDATE USER
+
+PUT {{api}}/users/61834033f721cd39fc7cec67
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRhNzYxMTg2NDQ4NGMyNzIzOGEyYiIsImlhdCI6MTYzNjE0ODYwNCwiZXhwIjoxNjM2MjM1MDA0fQ.UmRyuvfgawFs_bkByLu2oWbBdim9mUMCOuYyBm087F8
+
+{
+    "userName": "Yodenuevo"
+}
+
+
+
+
+### SIGN UP
+POST {{api}}/auth/signup
+Content-Type: application/json
+
+{
+    "userName": "Okami",
+    "email": "okami@gmail.com",
+    "password": "La3rriblepass%",
+    "firstName": "Paulo",
+    "lastName": "Rojas",
+    "avatar": "",
+    "roles": ["admin"]
+}

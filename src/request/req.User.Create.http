@@ -1,0 +1,36 @@
+@api = http://localhost:4000
+
+
+GET {{api}}/users
+
+###
+
+GET {{api}}/users/61832ca93c64922552e7027b
+
+### Create a user ADMIN
+POST {{api}}/users
+Content-Type: application/json
+
+{
+    "userName": "Okami",
+    "email": "okami@gmail.com",
+    "password": "La3rriblepass%",
+    "firstName": "Paulo",
+    "lastName": "Rojas",
+    "avatar": "",
+    "roles": ["admin"]
+}
+
+
+### Create a user NORMAL
+POST {{api}}/users
+Content-Type: application/json
+
+{
+    "userName": "wolf",
+    "email": "wolf@gmail.com",
+    "password": "3rriblepass%asdA",
+    "firstName": "Paulo",
+    "lastName": "Rojas",
+    "avatar": ""
+}

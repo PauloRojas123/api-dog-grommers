@@ -1,0 +1,23 @@
+@api = http://localhost:4000
+
+
+### AUTHENTICATED
+### USER [ADMIN]
+POST {{api}}/auth/signin
+Content-Type: application/json
+
+{
+    "userName": "Okami",
+    "password": "La3rriblepass%"
+    
+}
+### USER [NORMAL]
+
+POST {{api}}/auth/signin
+Content-Type: application/json
+
+{
+    "userName": "wolf",
+    "password": "3rriblepass%asdA"
+    
+}

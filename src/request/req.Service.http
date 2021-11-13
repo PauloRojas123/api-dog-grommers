@@ -1,0 +1,41 @@
+@api = http://localhost:4000
+
+
+        #### SERVICE ####
+
+### Create Service
+POST {{api}}/service
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjc1OTk4NywiZXhwIjoxNjM2ODQ2Mzg3fQ.Clp6BAF4V7bIIaem2IUO3V2mWfJJclujiQlIuFsRcA8
+
+{
+        "name": "Peinados Especiales y Coloración",
+        "description": "Peinados y Coloración para dar un toque único y exclusivo a nuestras mascotas. Utilizamos tinturas naturales para animales, complemente inofensivas para la salud de tu mascota."
+}
+
+
+### GET Service
+GET {{api}}/service
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjUwNDY2MiwiZXhwIjoxNjM2NTkxMDYyfQ.wX9rrIqiipb2iUdRLV1ZcKpUMM3BNgqlLNt6elXhDIY
+
+### GET BY ID Service
+GET {{api}}/service
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjUwNDY2MiwiZXhwIjoxNjM2NTkxMDYyfQ.wX9rrIqiipb2iUdRLV1ZcKpUMM3BNgqlLNt6elXhDIY
+
+
+### UPDATE Service
+PUT {{api}}/service/618b1462b433d8c3aa72b90f
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjUwNDY2MiwiZXhwIjoxNjM2NTkxMDYyfQ.wX9rrIqiipb2iUdRLV1ZcKpUMM3BNgqlLNt6elXhDIY
+
+{
+    "name": "Peluqueria"
+}
+
+
+### DELETE Service
+DELETE  {{api}}/service/618b1462b433d8c3aa72b90f
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjUwNDY2MiwiZXhwIjoxNjM2NTkxMDYyfQ.wX9rrIqiipb2iUdRLV1ZcKpUMM3BNgqlLNt6elXhDIY

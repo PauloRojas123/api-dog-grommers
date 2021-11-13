@@ -1,0 +1,37 @@
+@api = http://localhost:4000
+
+
+
+### Create a comment
+POST {{api}}/comment
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODVjMjgxZTE5ZWI0NTYyZGNjZWY5NyIsImlhdCI6MTYzNjUwMTQxMCwiZXhwIjoxNjM2NTg3ODEwfQ.p6VBE0XxppbBX5GnJULxCT79NxaBj--y5BbxZYweC_g
+
+{
+    "rate": 5,
+    "text": "Excelente Servicio"
+}
+
+### Delete a Comment
+
+DELETE {{api}}/comment/6185c4364274a82d542b2937
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRhNzYxMTg2NDQ4NGMyNzIzOGEyYiIsImlhdCI6MTYzNjE1NjQ1MywiZXhwIjoxNjM2MjQyODUzfQ.znNli_YKX-d3Q3hXTGDgWhaySW60DU2ouiSrmLSuuhs
+
+
+
+### Updated a comment
+PUT {{api}}/comment/6185c5389f1bccadfb93e53f
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODRhNzYxMTg2NDQ4NGMyNzIzOGEyYiIsImlhdCI6MTYzNjE1Njc4MCwiZXhwIjoxNjM2MjQzMTgwfQ.hlhitl81QLZN-26ACLK7HTILqdR1-_1Mx9_3Qps6t2U
+
+{
+    "rate": 3,
+    "text": "Buenardoxxx"
+}
+
+
+### GET all
+GET {{api}}/comment
+Content-Type: application/json
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODM0MmIxZGE2YjU0ZTNjMDlmMGZjOCIsImlhdCI6MTYzNTk5MjI2NiwiZXhwIjoxNjM2MDc4NjY2fQ.IH8ybM1YzOCSDvGagV_HVY-JIRkh9tTGIIPGCg3JcbQ
