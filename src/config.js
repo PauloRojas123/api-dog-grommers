@@ -8,7 +8,7 @@ export default {
     // MONGO_PASSWORD: process.env.MONGO_PASSWORD || 'admin',
     // MONGO_HOST: process.env.MONGO_HOST || 'localhost',
     MONGO_URI: process.env.MONGO_URI,
-    PORT: process.env.PORT || 4000,
+    PORT: process.env.PORT || 3001,
     //Token keyword
     SECRET: 'user-api'
 }
