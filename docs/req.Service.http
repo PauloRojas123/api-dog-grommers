@@ -1,4 +1,4 @@
-@api = mongodb+srv://paulo:paulo@cluster0.vrzsg.mongodb.net
+@api = http://localhost:4000
 
 
         #### SERVICE ####
