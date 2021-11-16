@@ -9,7 +9,7 @@ import config from './config.js';
             // user: config.MONGO_USER,
             // pass: config.MONGO_PASSWORD
         }
-        const db = await mongoose.connect(`mongodb://${config.MONGO_HOST}/${config.MONGO_DATEBASE}`, mongooseoptions);
+        const db = await mongoose.connect(config.MONGO_URI, mongooseoptions);
         console.log('database is connected to:', db.connection.name);
     } catch (error) {
         console.error(error)
