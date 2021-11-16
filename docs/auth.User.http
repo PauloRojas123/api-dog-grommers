@@ -7,8 +7,8 @@ POST {{api}}/auth/signin
 Content-Type: application/json
 
 {
-    "userName": "Okami",
-    "password": "La3rriblepass%"
+    "userName": "Paulo",
+    "password": "Pc3rtiblepass%"
     
 }
 ### USER [NORMAL]

@@ -6,7 +6,7 @@
 ### Create Service
 POST {{api}}/service
 Content-Type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjc1OTk4NywiZXhwIjoxNjM2ODQ2Mzg3fQ.Clp6BAF4V7bIIaem2IUO3V2mWfJJclujiQlIuFsRcA8
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTQxZmE0YmNjZjgxZGVkZDI0NzUxNCIsImlhdCI6MTYzNzA5NzU4MiwiZXhwIjoxNjM3MTgzOTgyfQ.YAu3XYQsOlTC40MlLdkdjE_9giENgMxOUVnax9De3Xo
 
 {
         "name": "Peinados Especiales y Coloración",

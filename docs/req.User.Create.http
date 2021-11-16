@@ -1,4 +1,4 @@
-@api = http://localhost:3001
+@api = http://localhost:4000
 
 
 GET {{api}}/users
@@ -12,9 +12,9 @@ POST {{api}}/users
 Content-Type: application/json
 
 {
-    "userName": "Okami",
-    "email": "okami@gmail.com",
-    "password": "Pn3rtiblepass%",
+    "userName": "Paulo",
+    "email": "paulo@gmail.com",
+    "password": "Pc3rtiblepass%",
     "firstName": "Paulo",
     "lastName": "Rojas",
     "avatar": "",
