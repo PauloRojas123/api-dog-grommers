@@ -47,7 +47,8 @@ export const signin = async (req, res) => {
         expiresIn: 86400
     })
 
-    res.json({token, payload})
+    res.json({token})
+    res.json(payload)
 
 }
       
