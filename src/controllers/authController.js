@@ -48,7 +48,7 @@ export const signin = async (req, res) => {
     })
 
     res.json({token})
-    res.json(payload)
+    res.json(payload.userName)
 
 }
       
