@@ -5,7 +5,7 @@ import * as serviceCtrl from '../controllers/serviceController.js'
 import { verifyToken, isAdmin } from '../middlewares/authJwt.js'
 
 
-router.get('/service', verifyToken, isAdmin, serviceCtrl.getService);
+router.get('/service', serviceCtrl.getService);
 
 router.post('/service', verifyToken, isAdmin, serviceCtrl.createService);
 
