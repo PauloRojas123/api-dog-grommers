@@ -14,6 +14,28 @@ export const getDogGrommer = async (req, res) => {
 
 }
 
+export const getDogGrommerWithService = async (req, res) => {
+    try {
+        const dgWithService = await DogGrommer.aggregate(
+            [
+                {
+                    $lookup:
+                      {
+                        from: 'services',
+                        localField: 'service',
+                        foreignField: "_id",
+                        as: 'DogGrommerService'
+                      }
+                 }
+            ]
+        )
+        res.json(dgWithService)
+    } catch (error) {
+        res.json(error)
+    }
+}
+
+
 export const getDogGrommerById = async (req, res) => {
 
     const dgFound = await DogGrommer.findById(req.params.id)
