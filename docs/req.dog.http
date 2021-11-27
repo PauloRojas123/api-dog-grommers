@@ -7,7 +7,7 @@ Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
 
 ### get BY ID DOGS
-GET {{api}}/dogGrommer/618b277d8d480a1d2f909794
+GET {{api}}/dogGrommer/61942302bccf81dedd247566
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOGIxMzE3ZTE0MDFiMGVhOWI1MzhkZSIsImlhdCI6MTYzNjU3OTIxNSwiZXhwIjoxNjM2NjY1NjE1fQ.QBvEqrYq4T77SOXt2v0PT-8MO9sNPsOy9yxYWctpL14
 

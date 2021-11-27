@@ -9,7 +9,7 @@ import { verifyToken } from '../middlewares/authJwt.js'
 
 router.get('/users', usersCtrl.getUsers);
 
-router.get('/users/:id', verifyToken, usersCtrl.getUser);
+router.get('/users/:id', usersCtrl.getUser);
 
 router.post('/users', validateCreate, validator.checkRolesExisted, usersCtrl.createUser);
 
