@@ -4,68 +4,32 @@ import Service from '../model/Service.js'
 
 
 
-// export const getDogGrommer = async (req, res) => {
-//     try {
-//         const dg = await DogGrommer.find()
-//         res.json(dg)
-//     } catch (error) {
-//         res.json(error)
-//     }
-
-// }
-
-export const getDogGrommerWithService = async (req, res) => {
+export const getDogGrommer = async (req, res) => {
     try {
-        const dgWithService = await DogGrommer.aggregate(
-            [
-                {
-                    $lookup:
-                      {
-                        from: 'services',
-                        localField: 'service',
-                        foreignField: "_id",
-                        as: 'DogGrommerService'
-                      }
-                 }
-            ]
-        )
-        res.json(dgWithService)
+        const dg = await DogGrommer.find()
+        res.json(dg)
     } catch (error) {
         res.json(error)
     }
+
+}
+
+export const getDogGrommerById = async (req, res) => {
+
+    const dogGrommerFound = await DogGrommer.findById(req.params.id).populate("service")
+
+    if (!dogGrommerFound) return res.status(204).json();
+
+    return res.status(200).json(dogGrommerFound)
 }
 
 
 // export const getDogGrommerById = async (req, res) => {
 
-//     const params = req.params.id
-
-//     const dgFound = await DogGrommer.findById(req.params.id).aggregate(
-//         [
-//             {
-//                 $lookup:
-//                   {
-//                     from: 'services',
-//                     localField: 'service',
-//                     foreignField: "_id",
-//                     as: 'DogGrommerService'
-//                   }
-//              },
-//              {$match: {params}}
-//         ]
-//     )
-//     res.json(dgWithService)
+//     const dgFound = await DogGrommer.findById(req.params.id)
 //     if (!dgFound) return res.status(204).json();
 //     return res.status(200).json(dgFound)
 // }
-
-
-export const getDogGrommerById = async (req, res) => {
-
-    const dgFound = await DogGrommer.findById(req.params.id)
-    if (!dgFound) return res.status(204).json();
-    return res.status(200).json(dgFound)
-}
 
 export const searchDG = async (req, res) => {
     try {

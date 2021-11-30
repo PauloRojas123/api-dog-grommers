@@ -6,7 +6,7 @@ import * as DogGrommerCtrl from '../controllers/dogGrommerController.js'
 
 
 
-router.get('/dogGrommer', DogGrommerCtrl.getDogGrommerWithService)
+router.get('/dogGrommer', DogGrommerCtrl.getDogGrommer)
 
 router.get('/dogGrommer/:id', DogGrommerCtrl.getDogGrommerById)
 
