@@ -41,7 +41,7 @@ export const signin = async (req, res) => {
 
     const matchPassword = await User.comparePassword(payload.password, userFound.password)
 
-    if (!matchPassword) return res.status(400).json({token: null, message: 'Incorrect username or password'})
+    if (!matchPassword) return res.status(400).json({message: 'Incorrect username or password'})
 
     const token = jwt.sign({id: userFound._id}, config.SECRET, {
         expiresIn: 86400
