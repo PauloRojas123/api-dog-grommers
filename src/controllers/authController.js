@@ -37,11 +37,11 @@ export const signin = async (req, res) => {
     
     const userFound = await User.findOne({userName: payload.userName}).populate('roles');
 
-    if (!userFound) return res.status(400).json({message: "User not found"})
+    if (!userFound) return res.status(400).json({message: "Incorrect username or password"})
 
     const matchPassword = await User.comparePassword(payload.password, userFound.password)
 
-    if (!matchPassword) return res.status(401).json({token: null, message: 'Invalid password'})
+    if (!matchPassword) return res.status(400).json({token: null, message: 'Incorrect username or password'})
 
     const token = jwt.sign({id: userFound._id}, config.SECRET, {
         expiresIn: 86400
