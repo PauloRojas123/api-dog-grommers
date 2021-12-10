@@ -22,7 +22,7 @@ export const createComment = async (req, res) => {
 
 export const getComment = async (req, res) => {
     try {
-        const comment = await Comment.find()
+        const comment = await Comment.find().populate('user')
         res.json(comment);
     } catch (error) {
         res.json(error)
