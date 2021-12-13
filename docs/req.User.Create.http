@@ -34,3 +34,16 @@ Content-Type: application/json
     "lastName": "Rojas",
     "avatar": ""
 }
+
+### Create a user NORMAL
+POST {{api}}/users
+Content-Type: application/json
+
+{
+    "userName": "unknown user",
+    "email": "unknown_user@gmail.com",
+    "password": "3rriblepass%asdA",
+    "firstName": "Paulo",
+    "lastName": "Rojas",
+    "avatar": ""
+}

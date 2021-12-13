@@ -5,11 +5,11 @@
 ### Create a comment
 POST {{api}}/comment
 Content-Type: application/json
-X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxODVjMjgxZTE5ZWI0NTYyZGNjZWY5NyIsImlhdCI6MTYzNjUwMTQxMCwiZXhwIjoxNjM2NTg3ODEwfQ.p6VBE0XxppbBX5GnJULxCT79NxaBj--y5BbxZYweC_g
+X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTQxZmJmYmNjZjgxZGVkZDI0NzUxOSIsImlhdCI6MTYzOTE4NzQ0NiwiZXhwIjoxNjM5MjczODQ2fQ.xeiBhLh1Bg_AUQu2Vq18owS7eSYeRSGm8yXaejKGU3U
 
 {
-    "rate": 5,
-    "text": "Excelente Servicio"
+    "rate": 4,
+    "text": "literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum'"
 }
 
 ### Delete a Comment
