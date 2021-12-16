@@ -47,7 +47,7 @@ export const getUsers = async (req, res) => {
 }
 
 export const getUser = async (req, res) => {
-    const userFound = await User.findById(req.params.id)
+    const userFound = await User.findById(req.params.id).populate('roles')
     if (!userFound) return res.status(204).json();
     return res.status(200).json(userFound)
 }
