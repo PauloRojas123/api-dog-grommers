@@ -5,7 +5,7 @@ GET {{api}}/users
 
 ###
 
-GET {{api}}/users/61832ca93c64922552e7027b
+GET {{api}}/users/61941fa4bccf81dedd247514
 
 ### Create a user ADMIN
 POST {{api}}/users

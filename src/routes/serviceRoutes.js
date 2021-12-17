@@ -11,7 +11,7 @@ router.post('/service', serviceCtrl.createService);
 
 router.put('/service/:id', verifyToken, isAdmin, serviceCtrl.updateServiceById);
 
-router.delete('/service/:id', verifyToken, isAdmin, serviceCtrl.deleteServiceById);
+router.delete('/service/:id', serviceCtrl.deleteServiceById);
 
 
 export default router
