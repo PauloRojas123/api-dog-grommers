@@ -5,6 +5,10 @@ const { ObjectId } = mongoose.Schema.Types
 
 
 const commentSchema = new Schema({
+    dogGrommer: {
+        type:ObjectId,
+        ref: 'Dog'
+    },
     rate: {
         type: Number,
         require: true

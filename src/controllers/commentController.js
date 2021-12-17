@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import Comment from '../model/Comment.js'
 import User from '../model/User.js'
+import DogGrommer from '../model/DogGrommer.js'
 
 const { ObjectId } = mongoose.Types
 
@@ -11,7 +12,9 @@ export const createComment = async (req, res) => {
 
     const user = await User.findById(req.userId)
 
-    const newComment = new Comment({ ...payload, user: user })
+    const dogGrommer = await DogGrommer.findById(payload.dogGrommer)
+
+    const newComment = new Comment({ ...payload, user: user, dogGrommer: dogGrommer })
 
     const commentSaved = await newComment.save()
 
@@ -22,7 +25,7 @@ export const createComment = async (req, res) => {
 
 export const getComment = async (req, res) => {
     try {
-        const comment = await Comment.find().populate('user')
+        const comment = await Comment.find().populate('user dogGrommer')
         res.json(comment);
     } catch (error) {
         res.json(error)

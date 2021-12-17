@@ -8,7 +8,7 @@ import { isAdmin } from '../middlewares/authJwt.js'
 
 router.get('/comment', commentCtrl.getComment);
 
-router.post('/comment', commentCtrl.createComment);
+router.post('/comment', verifyToken, commentCtrl.createComment);
 
 router.put('/comment/:id', verifyToken, commentCtrl.updateCommentById);
 
