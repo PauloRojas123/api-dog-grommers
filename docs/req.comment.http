@@ -5,7 +5,6 @@
 ### Create a comment
 POST {{api}}/comment
 Content-Type: application/json
-X-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTQxZmJmYmNjZjgxZGVkZDI0NzUxOSIsImlhdCI6MTYzOTE4NzQ0NiwiZXhwIjoxNjM5MjczODQ2fQ.xeiBhLh1Bg_AUQu2Vq18owS7eSYeRSGm8yXaejKGU3U
 
 {
     "rate": 4,
